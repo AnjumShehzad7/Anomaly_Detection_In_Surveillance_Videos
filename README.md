@@ -1,4 +1,4 @@
-# Real world Anomaly Detection in Surveillance Videos : Pytorch RE-Implementation 
+# Anomaly Detection in Surveillance Videos : Pytorch RE-Implementation 
 
 This repository is a re-implementation of "Real-world Anomaly Detection in Surveillance Videos" with pytorch. As a result of re-implementation, this code achieved a much higher AUC than the older version of this code.
 
