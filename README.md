@@ -98,7 +98,8 @@ Below is a sample visualization of the anomaly detection predictions:
 
 <table>
   <tr>
-    <td><img alt="Visualization" src="./result.png" height="280" width="400" /></td>
+    <td><img alt="Visualization" src="./result.png" height="140" width="200" /></td>
+    <td><img alt="Visualization" src="./Unusual-activities.png" height="140" width="200" /></td>
   </tr>
 </table>
 
