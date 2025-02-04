@@ -1,6 +1,41 @@
 # Anomaly Detection in Surveillance Videos
 
-"Real-world Anomaly Detection in Surveillance Videos" using PyTorch. The model leverages a feature extractor and a classifier to detect anomalies in surveillance videos.
+## Project Overview
+
+This project focuses on **anomaly detection in surveillance videos** using **deep learning**. The goal is to automatically identify **unusual activities** in videos, such as accidents, violence, theft, or other abnormal behaviors in real-world settings. The project **processes video frames, extracts features, and classifies whether a scene is normal or anomalous**.
+
+### Applications
+This anomaly detection system can be applied to various **real-world scenarios**, including:  
+
+✔️ **Public Safety**: Detecting crimes, accidents, or suspicious behavior in public areas.  
+✔️ **Smart Surveillance**: Automating CCTV monitoring to reduce manual supervision.  
+✔️ **Industrial Safety**: Monitoring factory environments for hazardous incidents.  
+✔️ **Healthcare & Elderly Care**: Identifying falls or medical emergencies.  
+✔️ **Traffic Surveillance**: Detecting traffic violations or accidents in real-time.  
+
+## Models & Features
+
+### Models Used  
+This project follows a **two-stage deep learning approach**:
+
+1️⃣ **Feature Extractor (Backbone Network)** 🧠  
+   - **Model Used**: **I3D (Inflated 3D ConvNet)**  
+   - **Pre-trained on**: **Kinetics-400** dataset  
+   - **Purpose**: Extracts spatial-temporal features from **video frames**  
+   - **Why I3D?** It captures **motion dynamics** effectively, making it ideal for video analysis.  
+
+2️⃣ **Classifier (Fully Connected Network)** 🎯  
+   - **Custom-built neural network** (`Learner` class in `learner.py`)  
+   - **Architecture**: Fully connected layers + ReLU + Dropout  
+   - **Final Activation**: **Sigmoid (binary classification: anomaly vs. normal)**  
+
+### Extracted Features  
+The model captures **spatial-temporal information** from video frames:  
+🔹 **Spatial Features**: Identifying key objects, shapes, and patterns (e.g., people, vehicles).  
+🔹 **Temporal Features**: Motion and activity patterns over time (e.g., abrupt movements, irregular behavior).  
+
+Using **I3D**, the system learns **both appearance and motion cues** from surveillance videos to differentiate between normal and abnormal behavior.
+
 
 ## Datasets
 
