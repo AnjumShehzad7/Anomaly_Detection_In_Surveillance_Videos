@@ -7,15 +7,15 @@ This project focuses on **anomaly detection in surveillance videos** using **dee
 ### Applications
 This anomaly detection system can be applied to various **real-world scenarios**, including:  
 
-✔️ **Public Safety**: Detecting crimes, accidents, or suspicious behavior in public areas.  
-✔️ **Smart Surveillance**: Automating CCTV monitoring to reduce manual supervision.  
-✔️ **Industrial Safety**: Monitoring factory environments for hazardous incidents.  
-✔️ **Healthcare & Elderly Care**: Identifying falls or medical emergencies.  
-✔️ **Traffic Surveillance**: Detecting traffic violations or accidents in real-time.  
+ **Public Safety**: Detecting crimes, accidents, or suspicious behavior in public areas.  
+ **Smart Surveillance**: Automating CCTV monitoring to reduce manual supervision.  
+ **Industrial Safety**: Monitoring factory environments for hazardous incidents.  
+ **Healthcare & Elderly Care**: Identifying falls or medical emergencies.  
+ **Traffic Surveillance**: Detecting traffic violations or accidents in real-time.  
 
 ## Models & Features
 
-### Models Used  
+### 1. Models Used  
 This project follows a **two-stage deep learning approach**:
 
 1️. **Feature Extractor (Backbone Network)**   
@@ -29,7 +29,7 @@ This project follows a **two-stage deep learning approach**:
    - **Architecture**: Fully connected layers + ReLU + Dropout  
    - **Final Activation**: **Sigmoid (binary classification: anomaly vs. normal)**  
 
-### Extracted Features  
+### 2. Extracted Features  
 The model captures **spatial-temporal information** from video frames:  
 🔹 **Spatial Features**: Identifying key objects, shapes, and patterns (e.g., people, vehicles).  
 🔹 **Temporal Features**: Motion and activity patterns over time (e.g., abrupt movements, irregular behavior).  
@@ -64,7 +64,7 @@ This provides a structured directory tree for dataset organization.
 
 ---
 
-### 4️. **Training and Testing Instructions**
+### 3. **Training and Testing Instructions**
 ## Training and Testing
 
 Run the following script to train and test the model:
@@ -76,7 +76,7 @@ This section tells users how to run the training/testing script.
 
 ---
 
-### 5️. **Model Components Explanation**
+### 4. **Model Components Explanation**
 ### Model Components
 The implementation includes the following key components:
 - **Feature Extractor**: Extracts deep features from video frames.
@@ -107,7 +107,7 @@ Displays an image from the results.
 
 ---
 
-### 8️. **Dependencies Installation**
+### 5. **Dependencies Installation**
 
 ## Dependencies
 
@@ -120,9 +120,3 @@ Lists the necessary Python libraries for running the project.
 
 ---
 
-### 9️⃣ **Citation and Contribution**
-
-## Citation
-If you find this work useful, please cite the original paper and the RTFM reference.
-
-For any issues, feel free to open an issue or contribute to this repository.
