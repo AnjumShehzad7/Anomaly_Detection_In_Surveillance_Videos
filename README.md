@@ -18,13 +18,13 @@ This anomaly detection system can be applied to various **real-world scenarios**
 ### Models Used  
 This project follows a **two-stage deep learning approach**:
 
-1️⃣ **Feature Extractor (Backbone Network)** 🧠  
+1️. **Feature Extractor (Backbone Network)**   
    - **Model Used**: **I3D (Inflated 3D ConvNet)**  
    - **Pre-trained on**: **Kinetics-400** dataset  
    - **Purpose**: Extracts spatial-temporal features from **video frames**  
    - **Why I3D?** It captures **motion dynamics** effectively, making it ideal for video analysis.  
 
-2️⃣ **Classifier (Fully Connected Network)** 🎯  
+2️. **Classifier (Fully Connected Network)**   
    - **Custom-built neural network** (`Learner` class in `learner.py`)  
    - **Architecture**: Fully connected layers + ReLU + Dropout  
    - **Final Activation**: **Sigmoid (binary classification: anomaly vs. normal)**  
@@ -64,7 +64,7 @@ This provides a structured directory tree for dataset organization.
 
 ---
 
-### 4️⃣ **Training and Testing Instructions**
+### 4️. **Training and Testing Instructions**
 ## Training and Testing
 
 Run the following script to train and test the model:
@@ -76,7 +76,7 @@ This section tells users how to run the training/testing script.
 
 ---
 
-### 5️⃣ **Model Components Explanation**
+### 5️. **Model Components Explanation**
 ### Model Components
 The implementation includes the following key components:
 - **Feature Extractor**: Extracts deep features from video frames.
@@ -107,7 +107,7 @@ Displays an image from the results.
 
 ---
 
-### 8️⃣ **Dependencies Installation**
+### 8️. **Dependencies Installation**
 
 ## Dependencies
 
